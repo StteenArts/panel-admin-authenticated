@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Admin | Testing</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css' rel='stylesheet'>
+    <link href="./style.css" rel="stylesheet">
+    <script src="../validateAuth.js" defer></script>
+</head>
+<body>
+<header class="bg-white p-3 shadow">
+    <div class="row ms-5 me-5">
+        <div class="col-md-6 text-start d-flex ">
+            <img src="https://www.svgrepo.com/show/58017/restaurant-symbol-of-cutlery-in-a-circle.svg" style="width: 8%;">
+            <h2 class="mt-3 ms-3">RestorApp</h2>
+        </div>
+        <div class="col-md-6 align-bottom d-flex justify-content-end align-items-center list-unstyled">
+            <li class="me-3"><a href="#" class="text-decoration-none text-dark">Dashboard</a></li>
+            <li class="me-3"><a href="../users/menu.html" class="text-decoration-none text-dark">Menú</a></li>
+            <li class="me-3"><a href="#" class="text-decoration-none text-dark">Users</a></li>
+            <li class="">
+                <img src="../images/images.png" class="img-fluid rounded-pill w-25">
+            </li>
+        </div>
+    </div>
+</header>
+
+<!-- Content body -->
+<main class="container-fluid p-5 text-center">
+    <div class="row gap-3 d-flex justify-content-center">
+        <!-- METRICS -->
+        <div class="row g-3">
+            <div class="col-md-4">
+            <div class="card card-metric p-3 shadow-sm">
+                <h3><i class="bi bi-list-stars me-2 text-success"></i></h3>
+                <h6>Total Orders</h6>
+                <h3>1,245</h3>
+            </div>
+            </div>
+
+            <div class="col-md-4">
+            <div class="card card-metric p-3 shadow-sm border-warning">
+                <h3><i class="bi bi-exclamation-circle-fill me-2 text-warning"></i></h3>
+                <h6>Pending Orders</h6>
+                <h3>15</h3>
+            </div>
+            </div>
+
+            <div class="col-md-4">
+            <div class="card card-metric p-3 shadow-sm border-success">
+                <h3><i class="bi bi-currency-exchange me-2 text-success"></i></h3>
+                <h6>Today's Revenue</h6>
+                <h3>$3,450</h3>
+            </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="container-fluid ms-5 me-5 mb-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="p-4 fw-bold">Recent Orders</h1>
+
+    <div class="card shadow-sm">
+            <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                <th>ID</th>
+                <th>User</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-success">
+                    <td>#1024</td>
+                    <td>Alice Smith</td>
+                    <td>Oct 27, 14:30</td>
+                    <td><span class="status preparing">Preparing</span></td>
+                    <td>$45.00</td>
+                </tr>
+                <tr>
+                    <td>#1023</td>
+                    <td>Bob Jones</td>
+                    <td>Oct 27, 14:15</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td>$12.50</td>
+                </tr>
+                <tr>
+                    <td>#1022</td>
+                    <td>Charlie Day</td>
+                    <td>Oct 27, 13:50</td>
+                    <td><span class="status delivered">Delivered</span></td>
+                    <td>$32.00</td>
+                </tr>
+
+            </tbody>
+            </table>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm sidebar-card p-3" style="max-width: 80%;">
+            <h6 class="text-muted">ORDER DETAILS</h6>
+            <h4>#1024 <span class="badge bg-primary ms-2">Preparing</span></h4>
+
+            <hr>
+
+            <div class="d-flex align-items-center mb-3">
+            <img src="https://via.placeholder.com/50" class="rounded-circle me-2">
+            <div>
+                <strong>Alice Smith</strong><br>
+                <small>alice@example.com</small><br>
+                <small>+1 555 123-4567</small>
+            </div>
+            </div>
+
+            <h6>Items</h6>
+            <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between">
+                Burger Classico <span>$24</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                Truffle Fries <span>$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                Vanilla Shake <span>$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                Chocolate Cake <span>$8</span>
+            </li>
+            </ul>
+
+            <p>Subtotal: $45.00</p>
+            <p>Tax (8%): $3.60</p>
+            <h5>Total: $48.60</h5>
+
+            <hr>
+
+            <select class="form-select mb-2">
+            <option>Preparing</option>
+            <option>Pending</option>
+            <option>Delivered</option>
+            </select>
+
+            <button class="btn btn-success w-100">Update</button>
+        </div>
+        </div>
+        
+    </div>
+</section>
+
+</body>
+</html>

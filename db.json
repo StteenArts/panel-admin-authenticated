@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "name": "Alex",
+      "email": "alex@gmai.com",
+      "password": 123456,
+      "rol": "user"
+    },
+    {
+      "id": "3ae0",
+      "name": "Stteen A",
+      "email": "Stteen@gmail.com",
+      "password": "123456",
+      "rol": "admin",
+      "active": true
+    },
+    {
+      "id": "f144",
+      "name": "klhlhlkh",
+      "email": "kjhjhjk",
+      "password": "123456",
+      "rol": "user",
+      "active": true
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css' rel='stylesheet'>
+    <script src="../validateAuth.js" defer></script>
+    <script src="../logout.js" defer></script>
+    <title>My orders</title>
+</head>
+<body>
+    <header class="bg-white p-3 shadow">
+        <div class="row ms-5 me-5">
+            <div class="col-md-6 text-start d-flex ">
+                <img src="https://www.svgrepo.com/show/58017/restaurant-symbol-of-cutlery-in-a-circle.svg" style="width: 8%;">
+                <h2 class="mt-3 ms-3">RestorApp</h2>
+            </div>
+            <div class="col-md-6 align-bottom d-flex justify-content-end list-unstyled mt-3 ">
+                <button type="button" class="btn btn-outline-danger" id="logout"><b><i class="bi bi-box-arrow-right me-2"></i>Logout</b></button>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-3">
+        <div class="row gx-5">
+            <!-- Lists of Orders -->
+            <div class="col-md-8 ">
+                <!-- Titles -->
+                <div class="row p-3">
+                    <div class="col-6">
+                        <h1>Recent Orders</h1>
+                    </div>
+                    <div class="col-6 align-content-center text-end">
+                        <small class="text-muted">View All</small>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="card col-12 ">
+                    <div class="card-body" >
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td class="col-2">
+                                        <img src="../images/images.png" class="img-fluid w-75">
+                                    </td>   
+                                    <td class="col-12">
+                                        <h5>#Order-144</h5>
+                                        <small class="text-muted">Cr 33A #72sur -184 | 2 items</small>
+                                    </td>
+                                    <td class="col-2 d-flex gap-3">
+                                        <h5 class="text-success mt-3">$45.50</h5>
+                                        <div class="bg-success rounded-pill p-3">(status)</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card about informations profile -->
+            <div class="col-md-4 mt-3 ">
+                <div class="mb-5 justify-content-center">
+                    <h1 class="fw-bold">Account Details</h1>
+                </div>
+                
+                <div class="card border p-3 rounded" style="width: 125%;">
+                    <div class="rounded-pill text-center mb-3">
+                        <img src="../images/images.png" class="card-img-top w-25" alt="...">
+                    </div>
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre del usuario</h5>
+                        <p class="card-muted">Correo de la persona</p>
+                        <a href="#" class="btn btn-outline-secondary fw-bold pe-2 ps-2 py-0 px-0">Customer</a>
+                        <hr />
+                        <div class="row gap-3 g-3 text-start">
+                            <div class="col bg-secondary p-4 rounded">
+                                <h5 class="text-muted">TOTAL ORDERS</h5>
+                                <h2 class="fw-bold">25</h2>
+                            </div>
+                            
+                            <div class="col bg-secondary p-4 rounded">
+                                <h5 class="text-muted">LOYALTY PTS</h5>
+                                <h2 class="fw-bold text-success">450</h2>
+                            </div>
+                        </div>
+                        <div class="mt-3 ">
+                            <button class="btn btn-outline-secondary col-12 p-2 mb-3">Paymenth Methods</button>
+                            <button class="btn btn-outline-secondary col-12 p-2">Saved Adressess</button>
+                            <button class="btn btn-outline-secondary col-12 p-2 mt-3">Preferences</button>
+                        </div>
+                    </div>
+                    <!-- Footer Fuera del profile account -->
+                    <div class="mt-4 bg-success text-center p-3 rounded">
+                        <i class="text-muted">RestoreApp Academic simulation V1.0 Performances monitoring active.</i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
