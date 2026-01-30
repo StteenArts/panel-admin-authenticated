@@ -13,14 +13,35 @@
       "password": "123456",
       "rol": "admin",
       "active": true
+    }
+  ],
+  "products": [
+    {
+      "id":"3ae0",
+      "name":"Burger classic beef",
+      "price": 200,
+      "category": "Burger",
+      "active": true,
+      "description": "Ingredientes de la hamburguesa....",
+      "imageUrl": "https://pre.burgerfoodporn.com/wp-content/uploads/2024/11/STREET.png"
     },
     {
-      "id": "f144",
-      "name": "klhlhlkh",
-      "email": "kjhjhjk",
-      "password": "123456",
-      "rol": "user",
-      "active": true
+      "id":"36f03",
+      "name":"Pizza border rellena",
+      "price": 200,
+      "category": "Pizza",
+      "active": true,
+      "description": "Ingredientes de la pizza....",
+      "imageUrl": "https://www.losreplicantes.com/images/articulos/34000/34716/d2.jpg"
+    },
+    {
+      "id":"3b62",
+      "name":"El gran salchicha",
+      "price": 200,
+      "category": "Perro caliente",
+      "active": true,
+      "description": "Ingredientes del perro caliente....",
+      "imageUrl": "https://tomatesenmijardin.wordpress.com/wp-content/uploads/2017/04/pepito-2.png"
     }
   ]
 }
